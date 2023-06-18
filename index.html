@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Logic Gates</title>
+</head>
+
+<body class="container">
+
+    <span id="navbar">
+        <button id="menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+</button>
+
+        <div id="menulist" class="dropdown-menu" aria-labelledby="menu">
+            <a class="dropdown-item" href="index.html">Home</a>
+            <a class="dropdown-item" href="otherprojects.html">Other Projects</a>
+            <a class="dropdown-item" href="reachout.html">Reach Out</a>
+            <a class="dropdown-item" href="credits.html">Credits</a>
+        </div>
+    </span>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <ul id="allRows">
+        <li id="topRow">
+            <span id="inA">a</span>
+            <span id="inB" class="inB">b</span>
+            <span id="out">Output</span>
+        </li>
+        <li id="rows">
+            <span id="inA" class="inA1">0</span>
+            <span id="inB" class="inB1">0</span>
+            <span id="out" class="out1"></span>
+
+        </li>
+        <li id="rows">
+            <span id="inA" class="inA2">0</span>
+            <span id="inB" class="inB2">1</span>
+            <span id="out" class="out2"></span>
+
+
+        </li>
+        <li id="rows">
+            <span id="inA" class="inA3">1</span>
+            <span id="inB" class="inB3">0</span>
+            <span id="out" class="out3"></span>
+        </li>
+        <li id="bottomRow">
+            <span id="inA" class="inA4">1</span>
+            <span id="inB" class="inB4">1</span>
+            <span id="out" class="out4"></span>
+        </li>
+    </ul>
+
+    <div class="form-section">
+        <label>Logic Gate:</label>
+
+        <select id="logic_gate" onchange="showImg()">
+            <option value="Select a logic gate" disabled selected>Select a logic gate</option>
+            <optgroup label="Basic Gates">
+                <option value="NOT">NOT</option>
+                <option value="OR">OR</option>
+                <option value="NOR">NOR</option>
+                <option value="AND">AND</option>
+                <option value="NAND">NAND</option>
+            </optgroup>
+            <optgroup label="Other Gates">
+                <option value="XOR">XOR</option>
+                <option value="XNOR">XNOR</option>
+            </optgroup>
+        </select>
+
+        <p id="square"></p>
+        <img id="gate_image" src="./img/transistor.png" alt="">
+        <div id="input_div">
+            <div class="rowSpacing">
+                <label id="label_input1">Input a:</label>
+                <label id="label_input2">Input b:</label>
+            </div>
+            <div class="rowUnder">
+                <select name="input1" id="input1">
+                    <option value="1">1</option>
+                    <option value="0">0</option>
+                </select>
+                <select name="input2" id="input2">
+                    <option value="1">1</option>
+                    <option value="0">0</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="submitStyle" onclick="changeText()">Submit</button>
+        <footer class="mytext">
+            <span class="outText">Output:</span>
+        </footer>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+html,
+body {
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#menu {
+    position: relative;
+    background-color: orange;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    right: -35px;
+    top: 15px;
+    margin-bottom: 10%;
+    border-radius: 5px 5px 5px 5px;
+    font-family: "Impact", sans-serif;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#menu.expanded {
+    width: 150px;
+    height: 200px;
+}
+
+div#menulist.dropdown-menu.show {
+    background-color: aqua;
+}
+
+a.dropdown-item {
+    background-color: rgb(251, 196, 94);
+    display: block;
+    width: 155px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    z-index: 5;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+#square {
+    position: relative;
+    height: 15px;
+    width: 17px;
+    right: -41.5px;
+    top: 50px;
+    background-color: rgb(254, 238, 219);
+    z-index: 2;
+}
+
+.container {
+    font-family: "Impact", sans-serif;
+    background-color: aliceblue;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navbar {
+    background-color: aqua;
+    height: 60px;
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#input1,
+#input2 {
+    height: 25px;
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 12px;
+}
+
+#logic_gate {
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#gate_image {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(254, 238, 219);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.rowSpacing {
+    position: relative;
+    display: flex;
+    top: 10px;
+}
+
+.rowUnder {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#label_input1,
+#label_input2 {
+    margin: 10px;
+}
+
+img {
+    margin-top: -25px;
+}
+
+.submitStyle {
+    position: relative;
+    height: 30px;
+    width: 69px;
+    font-weight: 600;
+    border: none;
+    margin: 25px;
+    background-color: orange;
+    border-radius: 5px 5px 5px 5px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.mytext {
+    height: 50px;
+    width: 100%;
+    bottom: -9px;
+    right: 0;
+    border: none;
+    border-radius: 0px 0px 50px 50px;
+    color: black;
+    background-color: aqua;
+    flex-wrap: wrap;
+    text-align: center;
+    top: 25px;
+}
+
+#ack {
+    padding: 25px;
+    font-size: larger;
+}
+
+
+#spcng {
+    overflow: auto;
+    padding-left: 10%;
+    height: 50%;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    height: 200px;
+}
+
+p.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.cred {
+    display: inline-flex;
+}
+
+.outText {
+    padding-left: 3px;
+    padding-right: 13px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+#allRows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+#inA,
+#inB,
+#out {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#out {
+    border-left: 1px solid orange;
+}
+
+#rows {
+    width: 150px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-bottom: 1px solid orange;
+}
+
+#topRow {
+    width: 150px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#bottomRow {
+    width: 150px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 0px 0px 15px 15px;
+}
+
+ul {
+    list-style-type: none;
+    width: 30%;
+}
